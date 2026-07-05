@@ -1,0 +1,13 @@
+name: MartianSand
+options:
+  bundleIdPrefix: com.max
+targets:
+  MartianSand:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources: [Sources]
+    settings:
+      GENERATE_INFOPLIST_FILE: YES
+      INFOPLIST_KEY_UILaunchScreen_Generation: YES
+      PRODUCT_BUNDLE_IDENTIFIER: com.max.martiansand
