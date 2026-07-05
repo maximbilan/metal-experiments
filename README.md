@@ -1,10 +1,6 @@
 # metal-experiments ⚡️
 
-Small, self-contained visual effects for SwiftUI — each one is a single Metal shader
-attached with a single SwiftUI modifier (`colorEffect` / `layerEffect` / `distortionEffect`).
-No MTKView, no SpriteKit, no render loops. Copy the `.metal` file into your app and go.
-
-Every effect lives in its own folder with the same layout:
+Small, self-contained visual experiments for iOS. Every effect lives in its own folder:
 
 ```
 <effect>/
@@ -12,7 +8,7 @@ Every effect lives in its own folder with the same layout:
 ├── screenshot.jpg   # preview
 ├── demo.mp4         # short capture
 ├── project.yml      # xcodegen spec for the standalone demo app
-└── Sources/         # one .swift + one .metal — that's the whole effect
+└── Sources/         # the effect code
 ```
 
 ## Effects
@@ -31,8 +27,3 @@ cd <effect>
 xcodegen generate
 open *.xcodeproj      # pick a simulator, hit Run
 ```
-
-## Requirements
-
-- iOS 17+ (SwiftUI Shader API: `colorEffect`, `layerEffect`, `distortionEffect`)
-- Xcode 26 (first build may prompt: `xcodebuild -downloadComponent MetalToolchain`)
