@@ -1,9 +1,8 @@
 # Water 💧
 
-A sunlit swimming-pool lane rendered by **one SwiftUI modifier** and **one Metal shader**.
-Ambient waves refract the tile floor and the dark lane line, sunlight caustics
-dance across them, raindrops ring the surface, and touching it sends ripples
-out from your finger.
+A sunlit pool rendered by **one SwiftUI modifier** and **one Metal shader**.
+Ambient waves refract the tile floor, sunlight caustics dance across it,
+raindrops ring the surface, and touching it sends ripples out from your finger.
 
 ![screenshot](screenshot.jpg)
 

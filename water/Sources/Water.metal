@@ -101,13 +101,6 @@ static float caustic(float2 uv, float time) {
     float3 col = mix(float3(0.10, 0.35, 0.45),
                      float3(0.45, 0.80, 0.88) * shade, tile);
 
-    // swim-lane marking: dark tile stripe down the middle of the floor
-    float lx = abs(ruv.x - ext.x * 0.5);
-    float lane = 1.0 - smoothstep(0.055, 0.075, lx);
-    float3 laneCol = mix(float3(0.02, 0.09, 0.22),
-                         float3(0.07, 0.16, 0.34) * shade, tile);
-    col = mix(col, laneCol, lane);
-
     // deeper water is darker and bluer; the top catches warm sun
     float depth = position.y / size.y;
     col = mix(col, float3(0.02, 0.16, 0.32), depth * 0.65);
