@@ -16,7 +16,6 @@ Small, self-contained visual experiments for iOS. Every effect lives in its own 
 | Preview | Effect | Description |
 |---|---|---|
 | <a href="singularity/"><img src="singularity/screenshot.jpg" width="160"></a> | [**Singularity**](singularity/) | A procedural black-hole nebula: gravitational swirl + domain-warped fbm noise + event-horizon rim. Drag to bend spacetime. One `colorEffect` shader, iOS 17+. |
-| <a href="water/"><img src="water/screenshot.jpg" width="160"></a> | [**Water**](water/) | A sunlit pool: waves refract the tile floor, caustics dance on top, raindrops ring the surface, and touching it sends out ripples. One `colorEffect` shader, iOS 17+. |
 
 ## Running a demo
 
