@@ -35,20 +35,6 @@ struct ContentView: View {
         }
         .ignoresSafeArea()
         .background(.black)
-        .overlay(alignment: .bottom) {
-            VStack(spacing: 6) {
-                Text("SINGULARITY")
-                    .font(.system(size: 34, weight: .black, design: .rounded))
-                    .kerning(6)
-                Text("drag to bend spacetime")
-                    .font(.system(.footnote, design: .monospaced))
-                    .opacity(0.6)
-            }
-            .foregroundStyle(.white)
-            .blendMode(.plusLighter)
-            .padding(.bottom, 48)
-            .allowsHitTesting(false)
-        }
         .statusBarHidden()
     }
 }
